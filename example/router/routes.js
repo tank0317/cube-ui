@@ -21,7 +21,10 @@ import TimePicker from '../pages/time-picker.vue'
 import Select from '../pages/select.vue'
 import Dialog from '../pages/dialog.vue'
 import ActionSheet from '../pages/action-sheet.vue'
-import Scroll from '../pages/scroll.vue'
+import Scroll from '../pages/scroll/index.vue'
+import ScrollDefault from '../pages/scroll/default.vue'
+import ScrollConfig from '../pages/scroll/config.vue'
+import ScrollFakeApp from '../pages/scroll/fake-app.vue'
 import IndexList from '../pages/index-list/index-list.vue'
 import IndexListDefault from '../pages/index-list/default.vue'
 import IndexListCustom from '../pages/index-list/custom.vue'
@@ -134,7 +137,21 @@ const routes = [
   },
   {
     path: '/scroll',
-    component: Scroll
+    component: Scroll,
+    children: [
+      {
+        path: 'default',
+        component: ScrollDefault
+      },
+      {
+        path: 'config',
+        component: ScrollConfig
+      },
+      {
+        path: 'fake-app',
+        component: ScrollFakeApp
+      }
+    ]
   },
   {
     path: '/index-list',
