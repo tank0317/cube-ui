@@ -303,7 +303,6 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             this.scroll.finishPullDown()
-            this.isPullingDown = false
             resolve()
           }, stopTime)
         })
