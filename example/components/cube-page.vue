@@ -47,7 +47,7 @@
 
   .cube-page
     position: absolute
-    z-index: 10
+    z-index: 31
     top: 0
     left: 0
     width: 100%
