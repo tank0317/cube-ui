@@ -65,7 +65,7 @@
                 <div
                     v-if="props.beforePullDown"
                     class="before-trigger"
-                    :style="{paddingTop: props.bubbleY + 'px'}">
+                    :style="{paddingTop: props.bubbleY - 10 + 'px'}">
                   <span :class="{rotate: props.bubbleY > pullDownRefreshThreshold - 40}">↓</span>
                 </div>
                 <div class="after-trigger" v-else>
